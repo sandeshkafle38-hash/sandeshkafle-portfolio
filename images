@@ -1,0 +1,27 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
