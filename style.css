@@ -297,10 +297,10 @@ footer p {
     color: #d1d5db;
 }
 .about-photo img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
     display: block;
     margin: 0 auto;
 }
