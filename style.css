@@ -421,3 +421,110 @@ footer p {
         justify-content: center;
     }
 }
+/* =========================
+   PREMIUM SKILLS SECTION
+========================= */
+
+#skills {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#skills h2 {
+    font-size: 38px;
+    margin: 5px 0 12px;
+}
+
+.skills-intro {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.skills-container {
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    padding: 32px 25px;
+
+    border-radius: 18px;
+
+    background: rgba(128, 128, 128, 0.08);
+
+    border: 1px solid rgba(128, 128, 128, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.skill-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.skill-level {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    background: rgba(128, 128, 128, 0.12);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    #skills {
+        padding: 70px 6%;
+    }
+
+    #skills h2 {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 28px 22px;
+    }
+}
