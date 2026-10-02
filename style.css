@@ -304,31 +304,26 @@ footer p {
     display: block;
     margin: 0 auto;
 }
-/* =========================
-   PREMIUM ABOUT SECTION
-========================= */
+/* ===== ABOUT SECTION ===== */
 
 #about {
-    padding: 90px 8%;
+    padding: 80px 8%;
 }
 
 #about > h2 {
     text-align: center;
     font-size: 38px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .about-container {
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
-
     display: grid;
-    grid-template-columns: 320px 1fr;
+    grid-template-columns: 280px 1fr;
+    gap: 60px;
     align-items: center;
-    gap: 70px;
 }
-
-/* Profile Photo */
 
 .about-photo {
     display: flex;
@@ -337,38 +332,23 @@ footer p {
 }
 
 .about-photo img {
-    width: 220px !important;
-    height: 220px !important;
+    width: 200px !important;
+    height: 200px !important;
     object-fit: cover !important;
     border-radius: 50% !important;
-
-    border: 5px solid #ffffff;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
-
     display: block;
-    transition: transform 0.3s ease;
 }
-
-.about-photo img:hover {
-    transform: scale(1.05);
-}
-
-/* About Text */
 
 .about-label {
-    display: inline-block;
-
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
-
-    margin-bottom: 12px;
 }
 
 .about-text h3 {
     font-size: 36px;
     line-height: 1.2;
-    margin: 0 0 22px;
+    margin: 12px 0 20px;
 }
 
 .about-text h3 span {
@@ -377,81 +357,67 @@ footer p {
 
 .about-text p {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 14px;
 }
-
-.about-text strong {
-    font-weight: 700;
-}
-
-/* Highlight Cards */
 
 .about-highlights {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     margin-top: 25px;
 }
 
 .highlight {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.1);
     display: flex;
     align-items: center;
-    gap: 8px;
-
-    padding: 10px 14px;
-
-    border-radius: 10px;
-    background: rgba(128, 128, 128, 0.10);
-
+    gap: 7px;
     font-size: 13px;
     font-weight: 600;
-
-    transition: transform 0.3s ease;
 }
 
-.highlight:hover {
-    transform: translateY(-4px);
-}
-
-.highlight strong {
-    font-size: 18px;
-}
-
-
-/* Mobile */
+/* ===== MOBILE ===== */
 
 @media (max-width: 700px) {
 
     #about {
-        padding: 70px 6%;
+        padding: 60px 6%;
     }
 
     #about > h2 {
         font-size: 32px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .about-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         text-align: center;
     }
 
     .about-photo img {
-        width: 190px !important;
-        height: 190px !important;
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    .about-text {
+        width: 100%;
     }
 
     .about-text h3 {
         font-size: 29px;
     }
 
-    .about-highlights {
-        justify-content: center;
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
-    .highlight {
+    .about-highlights {
         justify-content: center;
     }
 }
