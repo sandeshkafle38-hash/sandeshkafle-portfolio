@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sandesh Kafle - Computer Science Student and Web Developer">
+
+    <meta name="description" content="Sandesh Kafle - Computer Science Student and Web Developer">
+
     <title>Sandesh Kafle | Web Developer</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,72 +14,204 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-      <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+        <button id="theme-toggle" onclick="toggleTheme()">
+            🌙 Dark Mode
+        </button>
     </nav>
 
+
+    <!-- Home -->
     <header id="home">
-    <h1>Hi, I'm Sandesh Kafle  👋</h1>
 
-    <p>Computer Science Student & Web Developer</p>
+        <h1>Hi, I'm Sandesh Kafle 👋</h1>
 
-    <div class="hero-buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="#skills" class="btn btn-outline">My Skills</a>
-    </div>
-</header>
+        <p>Computer Science Student & Web Developer</p>
 
-<section id="about">
-    <div class="about-container">
-
-        <div class="about-text">
-            <h2>About Me</h2>
-
-            <p>
-                Hi! I'm SANDESH KAFLE . I am a Computer Science student
-                and I am learning web development.
-            </p>
-
-            <p>
-                I am currently learning HTML, CSS and JavaScript
-                and building my own projects.
-            </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#skills" class="btn btn-outline">My Skills</a>
         </div>
 
-        <div class="about-photo">
-            <img src="sandesh-profile.jpg" alt="Sandesh Kafle">
-                👨‍💻
+    </header>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-photo">
+                <img src="sandesh-profile.jpg" alt="Sandesh Kafle">
             </div>
+
+            <div class="about-text">
+
+                <h3>Hi, I'm Sandesh Kafle 👋</h3>
+
+                <p>
+                    I am a Computer Science student and an aspiring Web Developer
+                    from Nepal.
+                </p>
+
+                <p>
+                    I am currently learning HTML, CSS and JavaScript and building
+                    my own websites and projects.
+                </p>
+
+                <p>
+                    My goal is to improve my programming skills and become a
+                    professional developer.
+                </p>
+
+            </div>
+
         </div>
 
-    </div>
-</section>
+    </section>
 
+
+    <!-- Skills -->
     <section id="skills">
-    <h2>My Skills</h2>
 
-    <div class="skills-container">
+        <h2>My Skills</h2>
 
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Website structure बनाउन प्रयोग गर्छु।</p>
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>
+                    Website structure बनाउन प्रयोग गर्छु।
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>
+                    Website लाई design र style गर्न प्रयोग गर्छु।
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>
+                    Website लाई interactive बनाउन प्रयोग गर्छु।
+                </p>
+            </div>
+
         </div>
 
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <p>Website लाई design र style गर्न प्रयोग गर्छु।</p>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you want to contact me, feel free to send me a message.
+        </p>
+
+
+        <div class="contact-info">
+
+            <p>📧 Email: SandeshKafle87@gmail.com</p>
+
+            <p>📱 Phone: 9767804248</p>
+
+            <p>📍 Nepal</p>
+
         </div>
 
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Website लाई interactive बनाउन प्रयोग गर्छु।</p>
+
+        <!-- Contact Form -->
+        <form
+            id="contact-form"
+            action="https://formspree.io/f/xgavdyre"
+            method="POST"
+        >
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+
+        <!-- Social Links -->
+        <div class="social-links">
+
+            <a
+                href="https://www.facebook.com/share/1Lxrdzryjg/"
+                target="_blank"
+            >
+                Facebook
+            </a>
+
+            <a
+                href="https://www.instagram.com/sande_shkafle11/"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://github.com/sandeshkafle38-hash"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
         </div>
 
-    </div>
-</section>
+    </section>
 
-<section id="contact">
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Sandesh Kafle. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
