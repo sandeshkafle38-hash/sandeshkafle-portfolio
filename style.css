@@ -296,3 +296,11 @@ footer p {
 .dark-mode #contact-form textarea::placeholder {
     color: #d1d5db;
 }
+.about-photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
